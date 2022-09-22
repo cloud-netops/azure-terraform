@@ -6,10 +6,20 @@ terraform {
       version = "=3.0.1"
     }
   }
+
+   backend "azurerm" {
+    resource_group_name  = "myResourceGroup"
+    storage_account_name = "sureshstorage"
+    container_name       = "sureshtfstate"
+    key                  = "acr.demo.tfstate"
+  }
+
+  required_version = ">= 0.14.9"
 }
 
 provider "azurerm" {
   features {}
+  subscription_id ="869080e8-f18e-4ae9-bcb7-f43089c75784"
 }
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name

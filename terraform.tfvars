@@ -1,3 +1,3 @@
 resource_group_name = "myResourceGroup"
-location            = "southcentralus"
+location            = "westus2"
 acr_name	    = "myacrrepo448"

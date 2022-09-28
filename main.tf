@@ -9,7 +9,7 @@ terraform {
 
    backend "azurerm" {
     resource_group_name  = "myResourceGroup"
-    storage_account_name = "sureshstorage"
+    storage_account_name = "sureshstorage1080"
     container_name       = "sureshtfstate"
     key                  = "acr.demo.tfstate"
   }

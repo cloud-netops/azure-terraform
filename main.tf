@@ -21,10 +21,6 @@ provider "azurerm" {
   features {}
   subscription_id ="869080e8-f18e-4ae9-bcb7-f43089c75784"
 }
-resource "azurerm_resource_group" "rg" {
-  name     = var.resource_group_name
-  location = var.location
-}
 
 resource "azurerm_container_registry" "acr" {
   name     = var.acr_name

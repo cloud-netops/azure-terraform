@@ -1,3 +1,3 @@
-resource_group_name = "rg-tf-acr"
+resource_group_name = "myResourceGroup"
 location            = "southcentralus"
 acr_name	    = "myacrrepo431"
